@@ -4,26 +4,38 @@ using System.Text;
 
 namespace CoreEscuela.Entidades
 {
-    class Escuela
+    public class Escuela
     {
-        private string codigoEscuela;
-        public string CodigoEscuela
+        /*private string uniqueId;
+        public string UniqueId
         {
-            get { return "Codigo: " + codigoEscuela; }
-            set { codigoEscuela = value; }
-        }
+            get { return "Codigo: " + uniqueId; }
+            set { uniqueId = value.ToUpper(); }
+        }*/
 
+        public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
         public string Nombre { get; set; }
         public int AnioCreacion { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
+        public TiposEscuela TipoEscuela { get; set; }
+        public List<Curso> Cursos { get; set; }
 
-        /*public Escuela(string Nombre, int AnioCreacion)
-        {
-            this.Nombre = Nombre;
-            this.AnioCreacion = AnioCreacion;
-        }*/
+        public Escuela() { }
 
         public Escuela(string Nombre, int AnioCreacion) => (this.Nombre, this.AnioCreacion) = (Nombre, AnioCreacion);
+
+        public Escuela(string Nombre, int AnioCreacion, TiposEscuela TipoEscuela, string Pais = "", string Ciudad = "")
+        {
+            (this.Nombre, this.AnioCreacion) = (Nombre, AnioCreacion);
+            this.TipoEscuela = TipoEscuela;
+            this.Pais = Pais;
+            this.Ciudad = Ciudad;
+        }
+
+        public override string ToString()
+        {
+            return $"Nombre: {this.Nombre}, Tipo: {this.TipoEscuela} \n Pais: {this.Pais}, Ciudad: {this.Ciudad} "; 
+        }
     }
 }

@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{9F9A539D-036F-45C4-AB9E-371ACE63830D}|Default">
+  <MonoDevelop.Ide.ItemProperties.CoreEscuela PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Escuela/App/EscuelaEngine.cs">
+    <Files>
+      <File FileName="Escuela/Entidades/Escuela.cs" Line="15" Column="1" />
+      <File FileName="Escuela/Program.cs" Line="72" Column="35" />
+      <File FileName="Escuela/Entidades/Curso.cs" Line="20" Column="1" />
+      <File FileName="Escuela/Entidades/Alumno.cs" Line="7" Column="43" />
+      <File FileName="Escuela/App/EscuelaEngine.cs" Line="38" Column="10" />
+      <File FileName="Escuela/Entidades/Asignatura.cs" Line="1" Column="1" />
+      <File FileName="Escuela/Entidades/Evaluacion.cs" Line="10" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Escuela" expanded="True">
+            <Node name="CoreEscuela" expanded="True">
+              <Node name="App" expanded="True">
+                <Node name="EscuelaEngine.cs" selected="True" />
+              </Node>
+              <Node name="Entidades" expanded="True" />
+              <Node name="Util" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

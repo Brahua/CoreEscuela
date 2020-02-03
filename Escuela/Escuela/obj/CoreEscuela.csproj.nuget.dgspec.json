@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {}
+    "/Users/solmit/Desktop/Josue/C#/CoreEscuela/Escuela/Escuela/CoreEscuela.csproj": {}
   },
   "projects": {
-    "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {
+    "/Users/solmit/Desktop/Josue/C#/CoreEscuela/Escuela/Escuela/CoreEscuela.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
+        "projectUniqueName": "/Users/solmit/Desktop/Josue/C#/CoreEscuela/Escuela/Escuela/CoreEscuela.csproj",
         "projectName": "CoreEscuela",
-        "projectPath": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
-        "packagesPath": "C:\\Users\\Documentos\\.nuget\\packages\\",
-        "outputPath": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\obj\\",
+        "projectPath": "/Users/solmit/Desktop/Josue/C#/CoreEscuela/Escuela/Escuela/CoreEscuela.csproj",
+        "packagesPath": "/Users/solmit/.nuget/packages/",
+        "outputPath": "/Users/solmit/Desktop/Josue/C#/CoreEscuela/Escuela/Escuela/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Documentos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/solmit/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,13 +47,7 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
