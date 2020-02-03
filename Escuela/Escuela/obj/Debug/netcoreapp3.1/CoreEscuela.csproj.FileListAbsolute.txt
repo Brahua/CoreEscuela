@@ -1,0 +1,11 @@
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\CoreEscuela.csprojAssemblyReference.cache
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\CoreEscuela.AssemblyInfoInputs.cache
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\CoreEscuela.AssemblyInfo.cs
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.exe
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.deps.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.runtimeconfig.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.runtimeconfig.dev.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.dll
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\CoreEscuela.pdb
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\CoreEscuela.dll
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\CoreEscuela.pdb

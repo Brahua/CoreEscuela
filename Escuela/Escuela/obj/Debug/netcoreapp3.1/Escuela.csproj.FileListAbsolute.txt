@@ -1,0 +1,10 @@
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.exe
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.deps.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.runtimeconfig.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.runtimeconfig.dev.json
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.dll
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\bin\Debug\netcoreapp3.1\Escuela.pdb
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\Escuela.AssemblyInfoInputs.cache
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\Escuela.AssemblyInfo.cs
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\Escuela.dll
+D:\Archivos\Code\C#\CoreEscuela\Escuela\Escuela\obj\Debug\netcoreapp3.1\Escuela.pdb
