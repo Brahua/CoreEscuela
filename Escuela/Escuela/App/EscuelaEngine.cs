@@ -23,13 +23,6 @@ namespace CoreEscuela.App
             };
             CargarCursos();
             CargarAsignaturas();
-            GenerarAlumnosAlAzar(10);
-
-            foreach (var curso in this.Escuela.Cursos)
-            {
-                curso.Alumnos.AddRange(GenerarAlumnosAlAzar(10));
-            }
-
             CargarEvaluaciones();
 
         }
@@ -39,7 +32,7 @@ namespace CoreEscuela.App
             
         }
 
-        private IEnumerable<Alumno> GenerarAlumnosAlAzar(int cantidad)
+        private List<Alumno> GenerarAlumnosAlAzar(int Cantidad)
         {
             string[] nombre1 = { "Alba", "Felipa", "Eusebio", "Farid", "Donald", "Alvaro", "Nicolás" };
             string[] apellido1 = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
@@ -50,7 +43,7 @@ namespace CoreEscuela.App
                                from a1 in apellido1
                                select new Alumno { Nombre = $"{n1} {n2} {a1}" };
 
-            return listaAlumnos.OrderBy((Alumno Alumno) => Alumno.UniqueId).Take(cantidad).ToList();
+            return listaAlumnos.OrderBy((Alumno Alumno) => Alumno.UniqueId).Take(Cantidad).ToList();
         }
 
         private void CargarAsignaturas()
@@ -77,6 +70,12 @@ namespace CoreEscuela.App
                 new Curso { Nombre = "401", Jornada = TiposJornada.Tarde },
                 new Curso { Nombre = "501", Jornada = TiposJornada.Tarde }
             };
+            
+            foreach (var curso in this.Escuela.Cursos)
+            {
+                var CantidadRandom = new Random().Next(5, 20);
+                curso.Alumnos = GenerarAlumnosAlAzar(CantidadRandom);
+            }
         }
     }
 }
