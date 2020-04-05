@@ -16,48 +16,38 @@ namespace CoreEscuela
             escuela.Ciudad = "Lima";
             escuela.TipoEscuela = TiposEscuela.Primaria;
 
-            var curso1 = new Curso()
-            {
-                Nombre = "101"
-            };
-            var curso2 = new Curso()
-            {
-                Nombre = "201"
-            };
-            var curso3 = new Curso()
-            {
-                Nombre = "301"
-            };
+            var curso1 = new Curso() { Nombre = "101" };
+            var curso2 = new Curso() { Nombre = "201" };
+            var curso3 = new Curso() { Nombre = "301" };
 
-            //var arregloCursos = new Curso[] { curso1, curso2, curso3 };
-            //Curso[] arregloCursos = { curso1, curso2, curso3 };
-            //escuela.Cursos = new Curso[] { curso1, curso2, curso3 };
-
+            /* 
+             * Formas de llenar un arreglo
+             * 
+             * var arregloCursos = new Curso[] { curso1, curso2, curso3 };
+             * Curso[] arregloCursos = { curso1, curso2, curso3 };
+             */
 
             escuela.Cursos = new List<Curso>() { curso1, curso2, curso3 };
             escuela.Cursos.Add(new Curso { Nombre = "102", Jornada = TiposJornada.Mañana });
             escuela.Cursos.Add(new Curso { Nombre = "202", Jornada = TiposJornada.Tarde });
 
+
+            //Predicate
             escuela.Cursos.RemoveAll(Predicado);
-            //delegate
+            //Delegate
             escuela.Cursos.RemoveAll(delegate (Curso curso)
-            {
-                return curso.Nombre == "101";
-            });
-            //expresion lambda
+                                    {
+                                        return curso.Nombre == "101";
+                                    });
+            //Lambda
             escuela.Cursos.RemoveAll((curso) => curso.Nombre == "101" && curso.Jornada == TiposJornada.Noche);
-
-            //Console.WriteLine(new Escuela("Escuela 62", 1996, TiposEscuela.Secundaria, "Peru"));
-            //Console.WriteLine(new Escuela("Escuela 62", 1996, TiposEscuela.Secundaria, Ciudad: "Iquitos"));
-
 
 
             /* EscuelaEngine */
             EscuelaEngine EscuelaEngine = new EscuelaEngine();
             EscuelaEngine.Inicializar();
             Printer.ImprimirTitulo("BIENVENIDOS");
-            ImprimirCursosEscuela(EscuelaEngine.Escuela);
-        
+            ImprimirInformacionEscuela(EscuelaEngine.Escuela);
             
         }
 
@@ -70,16 +60,56 @@ namespace CoreEscuela
         /// Imprime en consola todos los cursos de una escuela
         /// </summary>
         /// <param name="escuela"></param>
-        public static void ImprimirCursosEscuela(Escuela escuela)
+        public static void ImprimirInformacionEscuela(Escuela escuela)
         {
+            Printer.ImprimirTitulo($"ESCUELA {escuela.Nombre.ToUpper()} \n");
             if (escuela?.Cursos != null)
             {
-                foreach (var curso in escuela.Cursos)
-                {
-                    WriteLine($"Nombre {curso.Nombre  }, Id  {curso.UniqueId}");
-                }
+                ImprimirCursos(escuela.Cursos);
+            }
+            else
+            {
+                WriteLine("No existe cursos registrados");
             }
         }
 
+        public static void ImprimirCursos(List<Curso> listaCursos) 
+        {
+            Printer.ImprimirTitulo("\nCURSOS");
+            foreach (Curso curso in listaCursos)
+            {
+                WriteLine($"\n\nNombre: {curso.Nombre} | Jornada: {curso.Jornada}");
+                ImprimirAsignaturas(curso.Asignaturas);
+                ImprimirAlumnos(curso.Alumnos);
+            }
+        }
+
+        private static void ImprimirAlumnos(List<Alumno> alumnos)
+        {
+            Printer.ImprimirTitulo("ALUMNOS");
+            foreach (Alumno alumno in alumnos)
+            {
+                WriteLine($"\nNombre: {alumno.Nombre}");
+                ImprimirEvaluaciones(alumno.Evaluaciones);
+            }
+        }
+
+        private static void ImprimirAsignaturas(List<Asignatura> asignaturas)
+        {
+            Printer.ImprimirTitulo("ASIGNATURAS");
+            foreach (Asignatura asignatura in asignaturas)
+            {
+                WriteLine($"Codigo: {asignatura.UniqueId} | Nombre: {asignatura.Nombre}");
+            }
+        }
+
+        private static void ImprimirEvaluaciones(List<Evaluacion> evaluaciones) 
+        {
+            Printer.ImprimirTitulo("NOTAS", 20, 20);
+            foreach (Evaluacion evaluacion in evaluaciones)
+            {
+                WriteLine($"Evaluacion: {evaluacion.Nombre} | Asignatura: {evaluacion.Asignatura.Nombre} | Nota: {evaluacion.Nota}");
+            }
+        }
     }
 }

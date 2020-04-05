@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {}
+    "D:\\Archivos\\Code\\C#\\Desarrollo\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {}
   },
   "projects": {
-    "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {
+    "D:\\Archivos\\Code\\C#\\Desarrollo\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
+        "projectUniqueName": "D:\\Archivos\\Code\\C#\\Desarrollo\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
         "projectName": "CoreEscuela",
-        "projectPath": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
+        "projectPath": "D:\\Archivos\\Code\\C#\\Desarrollo\\CoreEscuela\\Escuela\\Escuela\\CoreEscuela.csproj",
         "packagesPath": "C:\\Users\\Documentos\\.nuget\\packages\\",
-        "outputPath": "D:\\Archivos\\Code\\C#\\CoreEscuela\\Escuela\\Escuela\\obj\\",
+        "outputPath": "D:\\Archivos\\Code\\C#\\Desarrollo\\CoreEscuela\\Escuela\\Escuela\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Documentos\\AppData\\Roaming\\NuGet\\NuGet.Config",

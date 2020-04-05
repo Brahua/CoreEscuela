@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela
+    public class Escuela: ObjetoEscuelaBase
     {
         /*private string uniqueId;
         public string UniqueId
@@ -12,9 +12,6 @@ namespace CoreEscuela.Entidades
             get { return "Codigo: " + uniqueId; }
             set { uniqueId = value.ToUpper(); }
         }*/
-
-        public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
-        public string Nombre { get; set; }
         public int AnioCreacion { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
